@@ -10,22 +10,22 @@ const AlphabetTable = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        mt: 20,
-        height: "70vh",
+        my: {xs :'auto', md :'auto'},
+       height : '100vh',
+       backgroundColor : {xs : 'secondary.main'}
       }}
     >
-      <Box sx={{ backgroundColor: "secondary.main" }}>
-        <Typography variant="h6" sx={{ textAlign: "center", mt: 4 }}>
+      <Box sx={{ backgroundColor: "secondary.main", p : 2 }}>
+        <Typography variant="h6" sx={{ textAlign: "center", mt: 4, backgroundColor : 'primary.main', p:2, borderRadius : 3 }}>
           အက္ခရာအားနှိပ်၍ စကားပုံများအားဖတ်ရှုပါ။
         </Typography>
         <Box
           sx={{
-            maxWidth: "400px",
+            maxWidth: {xs : '100%',md :"400px"},
             display: "flex",
             justifyContent: " center",
             flexWrap: "wrap",
-
-            p: 5,
+            p: 2,
           }}
         >
           {alphabets.map((m) => (
